@@ -1,0 +1,227 @@
+body {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    font-family: var(--font-family-hind);
+    font-size: var(--font-size-s);
+    font-weight: 700;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 999;
+    transition: background-color 0.3s ease;
+    backdrop-filter: blur(10px); /* Apply backdrop filter for blur effect */
+  }
+  
+  .navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 20px;
+    text-align: right;
+  }
+  
+  .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: right;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    opacity: 0.7;
+}
+
+.index {
+    align-items: flex-start;
+    background-color: var(--white);
+    border: 1px none;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+}
+
+.index .welcome {
+    align-items: flex-start;
+    display: flex;
+    margin-top: -4px;
+    min-width: 100%;
+}
+
+.index .overlap-group {
+    height: 1028px;
+    position: relative;
+    width: 100%;
+}
+
+.index .secondary-shader {
+    background: linear-gradient(180deg, rgb(0, 0, 0) 14.58%, rgba(0, 0, 0, 0.2) 38.02%, rgba(0, 0, 0, 0.11) 58.33%, rgba(0, 0, 0, 0) 83.85%);
+    height: 1028px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: rotate(180deg);
+    width: 100%;
+}
+
+.index .main-shader {
+    background-color: #09090973;
+    height: 1024px;
+    left: 0;
+    mix-blend-mode: luminosity;
+    position: absolute;
+    top: 4px;
+    width: 100%;
+}
+
+.index .background {
+    height: 1024px;
+    left: 0;
+    mix-blend-mode: overlay;
+    object-fit: cover;
+    position: absolute;
+    top: 4px;
+    width: 100%;
+}
+
+.index .welcome-text {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    min-height: 227px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.index .telaga-warna {
+    color: var(--white);
+    font-family: var(--font-family-hind);
+    font-size: var(--font-size-l);
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+
+    text-align: center;
+    width: 100%;
+}
+
+.index .kami-adalah-siswa-si {
+    color: var(--white);
+    font-family: var(--font-family-hind);
+    font-size: var(--font-size-m);
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: normal;
+    text-align: left;
+}
+
+.index .sma-ricci-ii {
+    color: var(--white);
+    font-family: var(--font-family-hind);
+    font-size: var(--font-size-m);
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-right: 5.0px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.index .section-about {
+    align-items: flex-start;
+    background-color: var(--black);
+    display: flex;
+    gap: 104px;
+    height: auto;
+    padding: 27px 0;
+}
+
+.index .picutre-about {
+    align-self: center;
+    height: 400px;
+    margin-bottom: 435px;
+    width: 400px;
+}
+
+.index .about-text {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.index .title {
+    color: var(--white);
+    font-family: var(--font-family-hind);
+    font-size: var(--font-size-l);
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-right: 0;
+    text-align: center;
+}
+
+.section-footer {
+    background-color: var(--black);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-footer h1 {
+    color: var(--white);
+    font-family: var(--font-family-hind);
+    font-size: var(--font-size-s);
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-right: 0;
+    text-align: center;
+}
+
+.section-footer p {
+    color: var(--white);
+    font-family: var(--font-family-hind);
+    font-size: var(--font-size-s);
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-right: 0;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .index .welcome-text {
+      width: 100%;
+      left: 0;
+      transform: none;
+      text-align: center;
+    }
+  
+    .index .picutre-about {
+      display: none;
+    }
+}

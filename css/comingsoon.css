@@ -1,0 +1,23 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Hind:300,700");
+
+body {
+    background-color: #000000
+}
+
+.title {
+    font-family: "Hind", Helvetica;
+    font-size: 60px;
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 20%;
+}
+
+.desc {
+    font-family: "Hind", Helvetica;
+    font-size: 20px;
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 2%;
+}
+
